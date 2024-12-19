@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment1</title>
+    <link rel="stylesheet" href="form3.css">
+</head>
+<div class="container">
+    <div class="header">
+        <h1>Create Account</h1>
+        <p>Fill in the details to get started</p>
+    </div>
+    <form>
+        <label for="name">Full Name <span class="star">*</span></label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+        <br>
+        <label for="email">Email Address <span class="star">*</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <br>
+        <label for="password">Password <span class="star">*</label>
+        <br>
+        <input class="password" type="password" name="password" id="password" required>
+        <p class="faded1">Must be at least 8 characters long</p>
+        <label for="role">Role</label>
+        <br>
+        <select name="role" id="role">
+            <option value="select">Select a role</option>
+            <option value="first">1</option>
+            <option value="second"> 2</option>
+            <option value="third"> 3</option>
+        </select>
+        <br>
+        <label for="bio">Bio</label>
+        <br>
+        <textarea id="bio" name="bio" rows="7" placeholder="Tell us about yourself"></textarea>
+        <p class="faded2">Keep it short and sweet</p>
+        <div class="terms-group">
+            <div class="checkbox-item">
+                <input class="checkbox" type="checkbox" required>
+            </div>
+            <div class="checkbox-item">
+                <label>I agree to the terms and conditions <span class="star">*</span></label>
+            </div>
+        </div>
+        <br>
+        <input class="submit" type="submit" value="Create Account">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            background-image: url(background3.jpg);
+            height: 80vh;
+            width: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            color: white;
+            text-align: center;
+            font-size: 9.12em;
+            
+            
+        } 
+        
+        .planet{
+            position: absolute;
+            left: 1px;
+            transform: scale(.7);
+            top: 90px;
+            transition: all 1s;
+           
+        }
+
+        .planet:hover{
+            transform: scale(1.2);
+           
+           
+        }
+
+        h1{
+            line-height: 1em;
+            font-weight: 400;
+           
+        }
+
+        hr{
+            margin: 16px auto 0;
+            width: 60%;
+            height: 3px;
+            background: white;
+        }
+
+        
+       
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">David Weinberg</div>
+                <ul class="nav-links">
+                    <li id="l1"><a href="home_page.html">Home</a></li>
+                    <li id="l2"><a href="project.html">Projects</a></li>
+                    <li id="l3"><a href="resume.html">Resume</a></li>
+                    <li id="l4"><a href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <section>
+       
+
+        <div class="container">
+            <img class="planet" src="planet1.1.png"  alt="picture">
+            <h1 style="color: lightskyblue;">Software Developer</h1>
+            
+        </div>
+
+   
+
+    </section>
+
+    <footer>
+        &copy;David Weinberg. All rights reserved.
+    </footer>
+</body>
+</html>

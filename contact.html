@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        .contactme{
+            border: 5px solid lightsteelblue;
+            width: 380px;
+            padding: 7px;
+        }
+
+        .myinfo{
+            padding: 7px;
+            width: 450px;
+            border: 5px solid lightsteelblue;
+        }
+
+        section{
+            background-image: url(background3.jpg);
+            height: 80vh;
+            width: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            color: whitesmoke;
+        }
+
+        input{
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 4px 4px;
+        }
+       
+      
+
+       .button{
+        height: 50px;
+        width: 90px;
+        border-radius: 25px;
+        position: absolute;
+        left: 1000px;
+        top: 225px;
+       }
+       
+
+       .clickme{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">David Weinberg</div>
+                <ul class="nav-links">
+                    <li><a href="home_page.html">Home</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <section style="display: flex;">
+        <!-- <iframe name="map" style="border: 1.2px solid black;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.670753319007!2d-112.29541422522502!3d33.535944944817494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4104080e38d9%3A0x1fbd2919e78fa444!2sWest-MEC%20-%20Central%20Campus!5e0!3m2!1sen!2sus!4v1733950904535!5m2!1sen!2sus" width="450" height="515" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  -->
+
+        <div class="contactme">
+            <form>
+                <h1 style="text-decoration: underline;">Contact Me!</h1>
+
+                <label for="fname">First Name</label> <br>
+                <input type="text" name="fname" id="fname"> <br>
+
+                <label for="lname">Last Name</label> <br>
+                <input type="text" name="lname" id="lname"> <br>
+
+                <label for="email">Email Adress</label> <br>
+                <input type="email" name="email" id="email"> <br>
+
+                <label style="font-family: 'Courier New', Courier, monospace;" for="textarea">Please feel free to leave a message!</label> <br>
+                <textarea cols="30" rows="13" id="textarea"></textarea><br>
+
+                <input type="submit" style="padding: 5px;">
+
+            </form> 
+        </div>
+
+        <div class="myinfo">
+            <h1 style="text-decoration: underline;">My Information :</h1>
+
+            <h3>Email :</h3>
+            <p>davidweinberg007@gmail.com</p>
+
+            <h3>Phone :</h3>
+            <p>602.699.7306</p>
+
+            <h3>Home School :</h3>
+            <p>Sunrise Mountain High School</p>
+
+            <h3>Location :</h3>
+            <p>Peoria, Arizona</p> 
+
+            <iframe name="map" style="border: 1.2px solid black;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.670753319007!2d-112.29541422522502!3d33.535944944817494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4104080e38d9%3A0x1fbd2919e78fa444!2sWest-MEC%20-%20Central%20Campus!5e0!3m2!1sen!2sus!4v1733950904535!5m2!1sen!2sus" width="250" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+
+        <div class="image">
+            <img src="githublogo2.png" alt="logo" width="550px" height="250px"> 
+            <button title="github link!" class="button"><a class="clickme" href="https://github.com/david-wbrg">Click Me!</a></button>
+
+            
+            
+        </div>
+    </section>
+
+    <footer>
+        &copy;David Weinberg. All rights reserved.
+    </footer>
+</body>
+</html>

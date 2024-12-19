@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a container using flex properties</title>
+    <style>
+        .container{
+            padding: 100px;
+            gap: 20px;
+            display: flex;
+            background-color: #eee;
+            justify-content: space-around;
+           /*  flex-direction: column]; */
+        }
+
+        .container > .items{
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+            color: white;
+            font-size: 1em;
+            text-align: center;
+            padding: 20px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">HTML</div>
+        <div class="items">CSS</div>
+        <div class="items">JavaScript</div>
+    </div>
+</body>
+</html>
